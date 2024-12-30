@@ -7,10 +7,9 @@ export default defineConfig({
   plugins: [react(), dts()],
   build: {
     lib: {
-      entry: './src/Components/Modal.jsx',
+      entry: './src/Components/index.js',
       name: 'simpletext-modal',
-      fileName: 'simpletext-modal',
-      formats: ['es', 'umd'],
+      fileName: (format) => `simpletext-modal.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

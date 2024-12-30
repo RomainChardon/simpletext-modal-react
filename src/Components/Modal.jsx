@@ -27,7 +27,7 @@ const Close = styled.span`
     cursor: pointer;
 `
 
-function Modal({show, close, message, customStyle}) {
+export default function Modal({show, close, message, customStyle}) {
 
     if (!customStyle){
         customStyle = {
@@ -65,5 +65,3 @@ Modal.propTypes = {
     message: PropTypes.string,
     customStyle: PropTypes.object,
 }
-
-export default Modal;
