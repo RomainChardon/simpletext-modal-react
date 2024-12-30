@@ -1,5 +1,6 @@
 import Modal from "./Components/Modal.jsx";
 import {useState} from "react";
+import './assets/style.css'
 
 function App() {
     const [show, setShow] = useState(false);
@@ -9,17 +10,35 @@ function App() {
     }
 
     return (
-      <div>
-          <button onClick={handleClickShow}>
-              show
-          </button>
+        <div className="demo-container">
+            <header>
+                <h1>SimpleText Modal React</h1>
+                <p>Un package React léger pour gérer des modales simplement.</p>
+                <div className="links">
+                    <a href="https://github.com/RomainChardon/simpletext-modal-react/tree/main" target="_blank"
+                       rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.npmjs.com/package/simpletext-modal-react" target="_blank"
+                       rel="noopener noreferrer">npm</a>
+                </div>
+            </header>
 
-          <Modal
-            show={show}
-            close={() => setShow(false)}
-            message="C'est le text du modal !"
-          />
-      </div>
+            <main>
+                <button onClick={handleClickShow}>
+                    Open modal !
+                </button>
+
+                <Modal
+                    show={show}
+                    close={() => setShow(false)}
+                    message="If Microsoft invented something that didn't crash, it would be a nail"
+                />
+            </main>
+
+            <footer>
+                <p>Créé par <a href="https://github.com/RomainChardon" target="_blank" rel="noopener noreferrer">Romain
+                    Chardon</a></p>
+            </footer>
+        </div>
     )
 }
 

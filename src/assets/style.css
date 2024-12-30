@@ -1,0 +1,58 @@
+/* DemoPage.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.links a {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.open-modal-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.open-modal-btn:hover {
+    background-color: #005f99;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #555;
+}

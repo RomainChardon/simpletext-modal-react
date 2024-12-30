@@ -1,0 +1,3 @@
+# Autorise tous les moteurs de recherche à explorer tout le site
+User-agent: *
+Allow: /
