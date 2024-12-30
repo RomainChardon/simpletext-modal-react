@@ -1,8 +1,62 @@
-# React + Vite
+# simpletext-modal-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Modal for Project 14 OpenClassrooms
 
-Currently, two official plugins are available:
+[![NPM](https://img.shields.io/npm/v/simpletext-modal-react.svg)](https://www.npmjs.com/package/simpletext-modal-react)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
+
+A simple modal React component. For display simple text
+Keep the default theme or chose your modal style.
+
+[Github](https://github.com/RomainChardon/simpletext-modal-react) /
+[Website](https://www.romainchardon.fr)
+
+## Install
+
+```bash
+npm install --save simpletext-modal-react
+```
+
+## Usage 
+
+```jsx
+import React, {useState} from "react";
+
+// Import simpletext-modal
+import {Modal} from "simpletext-modal-react";
+
+function Exemple() {
+    // Set State
+    const [show, setShow] = useState(false);
+    const [message, setMessage] = useState("");
+
+    const handleClickShowModal = () => {
+        setShow(true); // Set true for dispay modal
+        setMessage('Exemple message !'); // Add your message
+    }
+
+    // If you want to create a custom modal style
+    const customStyle = styled.div`
+        background: green;
+    `
+
+    return (
+        <div>
+            <button onClick={handleClickShowModal}>
+                show modal
+            </button>
+            </div>
+            // Usage Modal component
+            <Modal
+                show={show}
+                close={() => setShow(false)}
+                message={message}
+                customStyle={customStyle} // optional
+            />
+        </div>
+    )
+}
+
+export default Exemple;
+```
