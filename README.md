@@ -9,6 +9,8 @@
 A simple modal React component. For display simple text
 Keep the default theme or chose your modal style.
 
+Show demo : [demo.romainchardon.fr](https://demo.romainchardon.fr/simpletext/)
+
 [Github](https://github.com/RomainChardon/simpletext-modal-react) /
 [Website](https://www.romainchardon.fr)
 
