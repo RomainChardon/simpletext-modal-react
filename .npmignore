@@ -1,0 +1,8 @@
+node_modules/
+.vite/
+.idea/
+src/
+vite.config.js
+package-lock.json
+eslint.config.js
+index.html
