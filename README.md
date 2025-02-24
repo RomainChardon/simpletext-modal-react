@@ -14,6 +14,13 @@ Show demo : [demo.romainchardon.fr](https://demo.romainchardon.fr/simpletext/)
 [Github](https://github.com/RomainChardon/simpletext-modal-react) /
 [Website](https://www.romainchardon.fr)
 
+## Prerequisites
+
+This project requires the following versions:
+
+- **React** >= 18.3
+- **Vite** >= 15.14
+
 ## Install
 
 ```bash
