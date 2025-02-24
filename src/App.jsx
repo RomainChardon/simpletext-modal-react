@@ -13,7 +13,7 @@ function App() {
         <div className="demo-container">
             <header>
                 <h1>SimpleText Modal React</h1>
-                <p>Un package React léger pour gérer des modales simplement.</p>
+                <p>A simple modal React component. To display simple text.</p>
                 <div className="links">
                     <a href="https://github.com/RomainChardon/simpletext-modal-react/tree/main" target="_blank"
                        rel="noopener noreferrer">GitHub</a>
